@@ -112,7 +112,6 @@ local function newGame()
             end
 
             local collisionType = event.other.objectName
-            print("collision began with " .. event.other.objectName)
 
             if (collisionType == "target_fire" or collisionType == "target_ice") then
                 event.other:removeSelf()
